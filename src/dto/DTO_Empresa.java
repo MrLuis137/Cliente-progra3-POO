@@ -5,7 +5,6 @@
  */
 package dto;
 
-import encargadopractica.Supervisor;
 
 /**
  *

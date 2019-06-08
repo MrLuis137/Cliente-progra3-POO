@@ -14,24 +14,18 @@ import java.io.ObjectOutputStream;
  * @version 16/5/2019
  */
 public class Cliente{
-  private static Cliente cliente;
+  
   private static final int PUERTO = 64923; //Puerto para la conexion
   private static final String HOST = "localhost"; //Host para la conexion
   protected static String mensajeServidor;
   protected static Socket cs; //Socket del servidor;
   protected static ObjectOutputStream salidaCliente; //Flujo de datos de salida
     
-  public Cliente getCliente(){
-    if(cliente == null){
-      cliente = new Cliente();
-    }
-    return cliente;
-  }
   
   /**
    * constructor del cliente del juego
    */ 
-  private Cliente(){
+  public Cliente(){
   }
     
   /**
