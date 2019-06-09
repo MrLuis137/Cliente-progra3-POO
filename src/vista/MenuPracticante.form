@@ -40,21 +40,21 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="regEntr" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="191" max="32767" attributes="0"/>
-                  <Component id="jButton4" min="-2" pref="130" max="-2" attributes="0"/>
+                  <Component id="crearMinu" min="-2" pref="130" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jButton2" min="-2" pref="201" max="-2" attributes="0"/>
+                  <Component id="notycal" min="-2" pref="201" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="227" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                          <Component id="jButton5" min="-2" pref="95" max="-2" attributes="0"/>
+                          <Component id="salir" min="-2" pref="95" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="290" max="-2" attributes="0"/>
@@ -72,13 +72,13 @@
                   <Component id="jLabel1" min="-2" pref="46" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton1" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                      <Component id="jButton4" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="regEntr" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="crearMinu" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="83" max="32767" attributes="0"/>
-                  <Component id="jButton2" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="notycal" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
-                  <Component id="jButton5" min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="salir" min="-2" pref="36" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -96,7 +96,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="regEntr">
           <Properties>
             <Property name="text" type="java.lang.String" value="Registrar entregable"/>
           </Properties>
@@ -104,7 +104,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="notycal">
           <Properties>
             <Property name="text" type="java.lang.String" value="Consultar notas y calendario"/>
           </Properties>
@@ -112,7 +112,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
+        <Component class="javax.swing.JButton" name="crearMinu">
           <Properties>
             <Property name="text" type="java.lang.String" value="Crear minutas"/>
           </Properties>
@@ -120,7 +120,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton5">
+        <Component class="javax.swing.JButton" name="salir">
           <Properties>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
