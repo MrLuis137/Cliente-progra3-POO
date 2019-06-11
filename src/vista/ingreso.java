@@ -32,7 +32,7 @@ public class ingreso extends javax.swing.JFrame {
     contrasenia = new javax.swing.JPasswordField();
     salir = new javax.swing.JButton();
     ingresar = new javax.swing.JButton();
-    jComboBox1 = new javax.swing.JComboBox<>();
+    tipos = new javax.swing.JComboBox<>();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,10 +49,10 @@ public class ingreso extends javax.swing.JFrame {
       }
     });
 
-    jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Practicante", "Profesor asesor", "Encargado de práctica", "Profesor de curso de prácitca" }));
-    jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+    tipos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Practicante", "Profesor asesor", "Encargado de práctica", "Profesor de curso de prácitca" }));
+    tipos.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
-        jComboBox1ActionPerformed(evt);
+        tiposActionPerformed(evt);
       }
     });
 
@@ -79,8 +79,8 @@ public class ingreso extends javax.swing.JFrame {
             .addComponent(ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGap(93, 93, 93))))
       .addGroup(jPanel1Layout.createSequentialGroup()
-        .addGap(156, 156, 156)
-        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addGap(163, 163, 163)
+        .addComponent(tipos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         .addGap(0, 0, Short.MAX_VALUE))
     );
     jPanel1Layout.setVerticalGroup(
@@ -94,9 +94,9 @@ public class ingreso extends javax.swing.JFrame {
         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
           .addComponent(contrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-        .addGap(33, 33, 33)
-        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+        .addGap(30, 30, 30)
+        .addComponent(tipos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(salir, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
           .addComponent(ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -125,53 +125,31 @@ public class ingreso extends javax.swing.JFrame {
     
   }//GEN-LAST:event_ingresarActionPerformed
 
-  private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+  private void tiposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tiposActionPerformed
     // TODO add your handling code here:
-  }//GEN-LAST:event_jComboBox1ActionPerformed
-
-  /**
-   * @param args the command line arguments
-   */
-  public static void main(String args[]) {
-    /* Set the Nimbus look and feel */
-    //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-    /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-     */
-    try {
-      for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-        if ("Nimbus".equals(info.getName())) {
-          javax.swing.UIManager.setLookAndFeel(info.getClassName());
-          break;
-        }
-      }
-    } catch (ClassNotFoundException ex) {
-      java.util.logging.Logger.getLogger(ingreso.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    } catch (InstantiationException ex) {
-      java.util.logging.Logger.getLogger(ingreso.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    } catch (IllegalAccessException ex) {
-      java.util.logging.Logger.getLogger(ingreso.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-      java.util.logging.Logger.getLogger(ingreso.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+  }//GEN-LAST:event_tiposActionPerformed
+  
+  public boolean logInDatosCorrectos(){  
+    if (nombreUsuario.getText().length() == 0 || contrasenia.getText().length() == 0){
+      return false;
     }
-    //</editor-fold>
-
-    /* Create and display the form */
-    java.awt.EventQueue.invokeLater(new Runnable() {
-      public void run() {
-        new ingreso().setVisible(true);
-      }
-    });
+    else{
+      return true;
+    }
+  } 
+  
+  public void cancelarInicioSesion(){
+    System.exit(0);
   }
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   public javax.swing.JPasswordField contrasenia;
   public javax.swing.JButton ingresar;
-  public javax.swing.JComboBox<String> jComboBox1;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
   private javax.swing.JPanel jPanel1;
   public javax.swing.JTextField nombreUsuario;
   public javax.swing.JButton salir;
+  public javax.swing.JComboBox<String> tipos;
   // End of variables declaration//GEN-END:variables
 }
