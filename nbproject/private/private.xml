@@ -5,20 +5,16 @@
         <group>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/RegistrarEntregable.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/controlador/ControladorPracticante.java</file>
-            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/ConsultarNotasFinales.java</file>
-            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/controlador/ControladorAsesor.java</file>
+            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/AsignarNota.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/CrearMinuta.java</file>
-            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/controlador/ControladorTotal.java</file>
-            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/MenuProfesorCursoPractica.java</file>
-            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/ConsultarDatos.java</file>
+            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/ConsultarEntregable.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/cliente/Cliente.java</file>
-            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/aplicacion/AplCliente.java</file>
+            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/MenuProfesorAsesor.java</file>
+            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/CalendarioPA.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/MenuEncargadoPractica.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/NotasyCalendario.java</file>
-            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/ingreso.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/ConsultarMinutas.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/dto/DTO_Practicante.java</file>
-            <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/controlador/ControladorProfesorCP.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/MenuPracticante.java</file>
             <file>file:/C:/Users/1001001238/Documents/GitHub/Cliente-progra3-POO/src/vista/SolicitarReunion.java</file>
         </group>
