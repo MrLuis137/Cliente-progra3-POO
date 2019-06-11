@@ -11,7 +11,7 @@ import interfaz.RegistrarEntregable;
 import javax.swing.*;
 import java.awt.event.*; 
 import java.util.ArrayList; 
-import vista.*;  
+
 /**
  *
  * @author 1001001238
@@ -36,8 +36,35 @@ public class ControladorPracticante  extends JFrame implements ActionListener{
   }
 
   @Override
-  public void actionPerformed(ActionEvent ae) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
+  public void actionPerformed(ActionEvent e) {
+    switch(e.getActionCommand()) {
+      case "Registrar entregable":
+        entregable.setVisible(true);
+        break;
+      case "Crear minutas":
+        minuta.setVisible(true);
+        break;
+      case "Consultar notas y calendario":
+        notas.setVisible(true);
+        break;  
+      case "Registrar usuario":
+        //vista3.setVisible(true);
+        break;  
+      case "Registrar":
+        //registrar();
+        break; 
+      case "Registrar salas":
+        //vista4.setVisible(true);
+        break;  
+      case "Registrar sala":
+        //registrarS();
+        break;     
+      case "Mostrar usuarios":
+        //mostrarUsuarios();
+        break;  
+      default:
+        break;
+    }
+  } 
  
 }

@@ -165,13 +165,13 @@ public class ingreso extends javax.swing.JFrame {
   }
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.JPasswordField contrasenia;
-  private javax.swing.JButton ingresar;
-  private javax.swing.JComboBox<String> jComboBox1;
+  public javax.swing.JPasswordField contrasenia;
+  public javax.swing.JButton ingresar;
+  public javax.swing.JComboBox<String> jComboBox1;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
   private javax.swing.JPanel jPanel1;
-  private javax.swing.JTextField nombreUsuario;
-  private javax.swing.JButton salir;
+  public javax.swing.JTextField nombreUsuario;
+  public javax.swing.JButton salir;
   // End of variables declaration//GEN-END:variables
 }
