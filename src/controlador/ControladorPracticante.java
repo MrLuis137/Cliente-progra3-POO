@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controlador;
-import interfaz.CrearMinuta;
-import interfaz.MenuPracticante;
-import interfaz.NotasyCalendario;
-import interfaz.RegistrarEntregable;
+package controlador; 
 import javax.swing.*;
 import java.awt.event.*; 
 import java.util.ArrayList; 
+import vista.CrearMinuta;
+import vista.MenuPracticante;
+import vista.NotasyCalendario;
+import vista.RegistrarEntregable;
 
 /**
  *
