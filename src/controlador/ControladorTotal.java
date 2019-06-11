@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import vista.MenuPracticante;
+import vista.MenuProfesorAsesor;
 
 /**
  *
@@ -45,14 +46,26 @@ public class ControladorTotal extends JFrame implements ActionListener{
       String opcion = ingreso.tipos.getSelectedItem().toString();
       //modelo = new Usuario(nombreUsuario, contraseña);
       //Usuario usuarioActual = vv.iniciarSesion(modelo);
-      if (opcion == "Practicante") {
+      if ("Practicante".equals(opcion)) {
         ingreso.setVisible(false); 
         //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre());
         MenuPracticante vista = new MenuPracticante();
         ControladorPracticante controladorPracticante = new ControladorPracticante();
         controladorPracticante.menu.setVisible(true);
         controladorPracticante.menu.setLocationRelativeTo(null); 
-      }
+      } else if ("Profesor asesor".equals(opcion)) {
+        ingreso.setVisible(false); 
+        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 
+        ControladorAsesor controladorAsesor = new ControladorAsesor();
+        controladorAsesor.menu.setVisible(true);
+        controladorAsesor.menu.setLocationRelativeTo(null); 
+      } else if ("Profesor de curso de prácitca".equals(opcion)) {
+        ingreso.setVisible(false); 
+        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 
+        ControladorProfesorCP controladorProfesorCP = new ControladorProfesorCP();
+        controladorProfesorCP.menu.setVisible(true);
+        controladorProfesorCP.menu.setLocationRelativeTo(null); 
+      } 
       else {
         //JOptionPane.showMessageDialog(vista, "El usuario indicado no existe");
       }

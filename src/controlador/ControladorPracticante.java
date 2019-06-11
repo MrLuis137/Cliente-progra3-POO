@@ -47,20 +47,20 @@ public class ControladorPracticante  extends JFrame implements ActionListener{
       case "Consultar notas y calendario":
         notas.setVisible(true);
         break;  
-      case "Registrar usuario":
-        //vista3.setVisible(true);
+      case "Entregar":
+        //entregable();
         break;  
-      case "Registrar":
-        //registrar();
+      case "Cargar archivo":
+        //guardarArchivo();
         break; 
-      case "Registrar salas":
-        //vista4.setVisible(true);
+      case "Cargar minuta":
+        //cargarMinuta();
         break;  
-      case "Registrar sala":
-        //registrarS();
+      case "Agregar personas a minuta":
+        //agregarPersonasM();
         break;     
-      case "Mostrar usuarios":
-        //mostrarUsuarios();
+      case "Crear minuta":
+        //crearMinuta();
         break;  
       default:
         break;

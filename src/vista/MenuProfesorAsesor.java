@@ -28,26 +28,26 @@ public class MenuProfesorAsesor extends javax.swing.JFrame {
 
     jPanel1 = new javax.swing.JPanel();
     jLabel1 = new javax.swing.JLabel();
-    jButton1 = new javax.swing.JButton();
-    jButton2 = new javax.swing.JButton();
-    jButton3 = new javax.swing.JButton();
-    jButton4 = new javax.swing.JButton();
-    jButton5 = new javax.swing.JButton();
+    ConsultaEntreg = new javax.swing.JButton();
+    AsignarNota = new javax.swing.JButton();
+    consultarCalendario = new javax.swing.JButton();
+    SolicitarReu = new javax.swing.JButton();
+    ConsultaMinu = new javax.swing.JButton();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
     jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
     jLabel1.setText("MENU");
 
-    jButton1.setText("Consultar entregable");
+    ConsultaEntreg.setText("Consultar entregable");
 
-    jButton2.setText("Asignar notas");
+    AsignarNota.setText("Asignar notas");
 
-    jButton3.setText("Consultar calendario");
+    consultarCalendario.setText("Consultar calendario");
 
-    jButton4.setText("Solicitar reunión");
+    SolicitarReu.setText("Solicitar reunión");
 
-    jButton5.setText("Consultar minutas");
+    ConsultaMinu.setText("Consultar minutas");
 
     javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
     jPanel1.setLayout(jPanel1Layout);
@@ -57,13 +57,13 @@ public class MenuProfesorAsesor extends javax.swing.JFrame {
         .addGap(87, 87, 87)
         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
           .addGroup(jPanel1Layout.createSequentialGroup()
-            .addComponent(jButton1)
+            .addComponent(ConsultaEntreg)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 210, Short.MAX_VALUE)
-            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(SolicitarReu, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
           .addGroup(jPanel1Layout.createSequentialGroup()
-            .addComponent(jButton3)
+            .addComponent(consultarCalendario)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addComponent(AsignarNota, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
         .addGap(103, 103, 103))
       .addGroup(jPanel1Layout.createSequentialGroup()
         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -72,7 +72,7 @@ public class MenuProfesorAsesor extends javax.swing.JFrame {
             .addComponent(jLabel1))
           .addGroup(jPanel1Layout.createSequentialGroup()
             .addGap(271, 271, 271)
-            .addComponent(jButton5)))
+            .addComponent(ConsultaMinu)))
         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
     );
     jPanel1Layout.setVerticalGroup(
@@ -82,14 +82,14 @@ public class MenuProfesorAsesor extends javax.swing.JFrame {
         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
         .addGap(18, 18, 18)
         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-          .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+          .addComponent(AsignarNota, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+          .addComponent(consultarCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
         .addGap(67, 67, 67)
         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-          .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+          .addComponent(SolicitarReu, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+          .addComponent(ConsultaEntreg, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addComponent(ConsultaMinu, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
         .addGap(106, 106, 106))
     );
 
@@ -111,11 +111,11 @@ public class MenuProfesorAsesor extends javax.swing.JFrame {
  
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  public javax.swing.JButton jButton1;
-  public javax.swing.JButton jButton2;
-  public javax.swing.JButton jButton3;
-  public javax.swing.JButton jButton4;
-  public javax.swing.JButton jButton5;
+  public javax.swing.JButton AsignarNota;
+  public javax.swing.JButton ConsultaEntreg;
+  public javax.swing.JButton ConsultaMinu;
+  public javax.swing.JButton SolicitarReu;
+  public javax.swing.JButton consultarCalendario;
   public javax.swing.JLabel jLabel1;
   private javax.swing.JPanel jPanel1;
   // End of variables declaration//GEN-END:variables
