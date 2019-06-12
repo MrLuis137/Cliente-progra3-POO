@@ -65,6 +65,10 @@ public class ControladorPracticante  extends JFrame implements ActionListener{
       default:
         break;
     }
-  } 
+  }
+  
+  private boolean entregable(){
+     return true;
+  }
  
 }
