@@ -48,8 +48,7 @@ public class ControladorTotal extends JFrame implements ActionListener{
       //Usuario usuarioActual = vv.iniciarSesion(modelo);
       if ("Practicante".equals(opcion)) {
         ingreso.setVisible(false); 
-        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre());
-        MenuPracticante vista = new MenuPracticante();
+        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 
         ControladorPracticante controladorPracticante = new ControladorPracticante();
         controladorPracticante.menu.setVisible(true);
         controladorPracticante.menu.setLocationRelativeTo(null); 
@@ -59,6 +58,12 @@ public class ControladorTotal extends JFrame implements ActionListener{
         ControladorAsesor controladorAsesor = new ControladorAsesor();
         controladorAsesor.menu.setVisible(true);
         controladorAsesor.menu.setLocationRelativeTo(null); 
+      } else if ("Encargado de práctica".equals(opcion)) {
+        ingreso.setVisible(false); 
+        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 
+        ControladorEncargado controladorEncargado = new ControladorEncargado();
+        controladorEncargado.menu.setVisible(true);
+        controladorEncargado.menu.setLocationRelativeTo(null); 
       } else if ("Profesor de curso de prácitca".equals(opcion)) {
         ingreso.setVisible(false); 
         //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 

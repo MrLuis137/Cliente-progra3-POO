@@ -36,6 +36,7 @@ public class RegistrarProfesor extends javax.swing.JFrame {
     regis = new javax.swing.JButton();
     exit = new javax.swing.JButton();
     jLabel4 = new javax.swing.JLabel();
+    tipos = new javax.swing.JComboBox<>();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,7 +44,7 @@ public class RegistrarProfesor extends javax.swing.JFrame {
     jLabel1.setText("Nombre");
 
     jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    jLabel2.setText("Tel");
+    jLabel2.setText("Telefono");
 
     jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
     jLabel3.setText("Correo");
@@ -54,76 +55,83 @@ public class RegistrarProfesor extends javax.swing.JFrame {
 
     correo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
-    regis.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    regis.setText("Registrar");
+    regis.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+    regis.setText("Registrar profe");
 
-    exit.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+    exit.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
     exit.setText("Cancelar");
     exit.setToolTipText("");
 
     jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    jLabel4.setText("Registrar Profesor");
+    jLabel4.setText("REGISTRAR");
+
+    tipos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+    tipos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Profesor asesor ", "Profesor de curso de prácitca" }));
+    tipos.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        tiposActionPerformed(evt);
+      }
+    });
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-          .addGroup(layout.createSequentialGroup()
-            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(regis, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-          .addGroup(layout.createSequentialGroup()
-            .addGap(111, 111, 111)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-              .addComponent(jLabel3)
-              .addComponent(jLabel1)
-              .addComponent(jLabel2))
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 154, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-              .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-              .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-              .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))))
-        .addGap(109, 109, 109))
       .addGroup(layout.createSequentialGroup()
-        .addGap(214, 214, 214)
+        .addGap(111, 111, 111)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING))
+          .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+          .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+          .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+          .addComponent(regis))
+        .addGap(99, 99, 99))
+      .addGroup(layout.createSequentialGroup()
+        .addGap(238, 238, 238)
         .addComponent(jLabel4)
         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-      .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        .addGroup(layout.createSequentialGroup()
-          .addGap(94, 94, 94)
-          .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addContainerGap(373, Short.MAX_VALUE)))
+      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        .addComponent(tipos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addGap(149, 149, 149))
     );
     layout.setVerticalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(layout.createSequentialGroup()
-        .addGap(42, 42, 42)
+        .addGap(21, 21, 21)
         .addComponent(jLabel4)
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+        .addGap(16, 16, 16)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(jLabel1)
           .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        .addGap(32, 32, 32)
+        .addGap(35, 35, 35)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(jLabel2)
           .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        .addGap(37, 37, 37)
+        .addGap(34, 34, 34)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(jLabel3)
           .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        .addGap(67, 67, 67)
-        .addComponent(regis, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addGap(47, 47, 47))
-      .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-          .addContainerGap(333, Short.MAX_VALUE)
+        .addGap(31, 31, 31)
+        .addComponent(tipos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addGap(47, 47, 47)))
+          .addComponent(regis, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
     );
 
     pack();
   }// </editor-fold>//GEN-END:initComponents
+
+  private void tiposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tiposActionPerformed
+    // TODO add your handling code here:
+  }//GEN-LAST:event_tiposActionPerformed
 
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -136,5 +144,6 @@ public class RegistrarProfesor extends javax.swing.JFrame {
   public javax.swing.JTextField nombre;
   public javax.swing.JButton regis;
   public javax.swing.JTextField tel;
+  public javax.swing.JComboBox<String> tipos;
   // End of variables declaration//GEN-END:variables
 }

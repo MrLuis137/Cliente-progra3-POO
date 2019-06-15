@@ -46,7 +46,7 @@ public class ControladorProfesorCP extends JFrame implements ActionListener{
         //consultarNotas();
         break;  
       case "Salir":
-        //guardarArchivo();
+        System.exit(0);
         break;  
       default:
         break;
