@@ -12,9 +12,36 @@ package dto;
 public class DTO_Profesor extends DTO_Object{
 
   private String nombre;
-  private int telefono;
+  private String telefono;
   private String correo;
+  private String puesto;
+  private String contra;
 
+  public String getContra() {
+    return contra;
+  }
+
+  public void setContra(String contra) {
+    this.contra = contra;
+  }
+  
+  
+  public String getTelefono() {
+    return telefono;
+  }
+
+  public void setTelefono(String telefono) {
+    this.telefono = telefono;
+  }
+
+  public String getPuesto() {
+    return puesto;
+  }
+
+  public void setPuesto(String puesto) {
+    this.puesto = puesto;
+  }
+   
   public String getNombre() {
     return nombre;
   }
@@ -22,15 +49,7 @@ public class DTO_Profesor extends DTO_Object{
   public void setNombre(String nombre) {
     this.nombre = nombre;
   }
-
-  public int getTelefono() {
-    return telefono;
-  }
-
-  public void setTelefono(int telefono) {
-    this.telefono = telefono;
-  }
-
+ 
   public String getCorreo() {
     return correo;
   }
@@ -38,6 +57,4 @@ public class DTO_Profesor extends DTO_Object{
   public void setCorreo(String correo) {
     this.correo = correo;
   }
-  
-  
 }
