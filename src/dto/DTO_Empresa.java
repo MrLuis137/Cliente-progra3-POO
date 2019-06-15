@@ -11,7 +11,7 @@ package dto;
  * @author Luis AZ
  */
 public class DTO_Empresa extends DTO_Object{
-    private String nombre;
+  private String nombre;
   private String direccion;
   private int telefono;
   private String sup;

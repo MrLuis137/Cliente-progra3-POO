@@ -15,14 +15,22 @@ public class DTO_Practicante extends DTO_Object{
   private String nombre;
   private String carnet;
   private String cedula;
-  private int telefono;
+  private String telefono;
   private Calendar nacimiento;
   private String correo;
   private String direccion;
   private String profeCurso;
   private String empresa;
   private String profeAsesor;
+  private String periodo; 
+  public String getPeriodo() {
+    return periodo;
+  }
 
+  public void setPeriodo(String periodo) {
+    this.periodo = periodo;
+  }
+   
   public String getNombre() {
     return nombre;
   }
@@ -47,11 +55,11 @@ public class DTO_Practicante extends DTO_Object{
     this.cedula = cedula;
   }
 
-  public int getTelefono() {
+  public String getTelefono() {
     return telefono;
   }
 
-  public void setTelefono(int telefono) {
+  public void setTelefono(String telefono) {
     this.telefono = telefono;
   }
 
@@ -102,6 +110,4 @@ public class DTO_Practicante extends DTO_Object{
   public void setProfeAsesor(String profeAsesor) {
     this.profeAsesor = profeAsesor;
   }
-  
-  
-}
+} 
