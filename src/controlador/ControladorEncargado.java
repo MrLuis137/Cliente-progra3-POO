@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package controlador;
+import cliente.Cliente;
 import dto.DTO_Profesor;
 import javax.swing.*;
 import java.awt.event.*; 
@@ -25,6 +26,7 @@ public class ControladorEncargado extends JFrame implements ActionListener {
   public RegistrarPeriodo periodo = new RegistrarPeriodo();
   public RegistrarPracticante regPrac = new RegistrarPracticante();
   public DTO_Profesor dtoProfesor= new DTO_Profesor();
+  public Cliente logica= new Cliente();
   public ControladorEncargado() {
     menu.jButton1.addActionListener(this);
     menu.jButton2.addActionListener(this);
@@ -68,10 +70,17 @@ public class ControladorEncargado extends JFrame implements ActionListener {
   public void registrarProfe() { 
     if (regisProfe.logInDatosCorrectos() == true) {
       String nombreUsuario = regisProfe.nombre.getText();
-      String contraseña = regisProfe.contr.getText();
+      String contrasena = regisProfe.contr.getText();
       String telef = regisProfe.tel.getText();
       String correo = regisProfe.correo.getText();
       String opcion = regisProfe.tipos.getSelectedItem().toString();
+      DTO_Profesor profe= new DTO_Profesor();
+      profe.setNombre(nombreUsuario);
+      profe.setPuesto(opcion);
+      profe.setTelefono(telef);
+      profe.setCorreo(correo);
+      profe.setContra(contrasena);
+      logica.enviarInformacion(profe);
       //modelo = new Usuario(nombreUsuario, contraseña);
       boolean usuarioActual = true;
       if (usuarioActual != false) { 
