@@ -6,6 +6,7 @@
 package controlador;
 import cliente.Cliente;
 import dto.DTO_Object;
+import dto.DTO_PeriodoPractica;
 import dto.DTO_Profesor;
 import dto.DTO_Solicitud;
 import javax.swing.*;
@@ -66,6 +67,9 @@ public class ControladorEncargado extends JFrame implements ActionListener {
       case "Registrar profe":
         registrarProfe();
         break;  
+      case "Registrar Periodo":
+        registrarPP();
+        break;  
     }
   }
   
@@ -98,4 +102,26 @@ public class ControladorEncargado extends JFrame implements ActionListener {
     }
   }
   
+  public void registrarPP() { 
+    if (periodo.logInDatosCorrectos() == true) {
+      String semestre = periodo.semestre.getText();
+      String anio = periodo.Anio.getText(); 
+      DTO_PeriodoPractica pp= new DTO_PeriodoPractica();
+      pp.setSemestre(semestre);
+      pp.setAnio(anio); 
+      DTO_Solicitud soli= new DTO_Solicitud();
+      soli.setInstruccion("regPP");
+      soli.setObjeto((DTO_Object) pp);
+      logica.enviarInformacion(soli);
+      //modelo = new Usuario(nombreUsuario, contraseña);
+      boolean usuarioActual = true;
+      if (usuarioActual != false) { 
+      }
+      else {
+        //JOptionPane.showMessageDialog(vista3, "El usuario indicado ya existe");
+      }
+    } else {
+      //JOptionPane.showMessageDialog(vista3, "Todos los datos son requeridos");
+    }
+  }
 }

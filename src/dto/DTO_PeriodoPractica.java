@@ -12,42 +12,22 @@ import java.util.Calendar;
  * @author Luis AZ
  */
 public class DTO_PeriodoPractica extends DTO_Object{
-  private Calendar inicio;
-  private Calendar fin;
-  private int semestre;
-  private int anio;
-
-  public Calendar getInicio() {
-    return inicio;
-  }
-
-  public void setInicio(Calendar inicio) {
-    this.inicio = inicio;
-  }
-
-  public Calendar getFin() {
-    return fin;
-  }
-
-  public void setFin(Calendar fin) {
-    this.fin = fin;
-  }
-
-  public int getSemestre() {
+  private String semestre;
+  private String anio;
+ 
+  public String getSemestre() {
     return semestre;
   }
 
-  public void setSemestre(int semestre) {
+  public void setSemestre(String semestre) {
     this.semestre = semestre;
   }
 
-  public int getAnio() {
+  public String getAnio() {
     return anio;
   }
 
-  public void setAnio(int anio) {
+  public void setAnio(String anio) {
     this.anio = anio;
   }
-  
-  
 }

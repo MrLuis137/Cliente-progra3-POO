@@ -18,6 +18,14 @@ public class RegistrarPeriodo extends javax.swing.JFrame {
     initComponents();
   }
 
+  public boolean logInDatosCorrectos(){  
+    if (semestre.getText().length() == 0 || Anio.getText().length() == 0){
+      return false;
+    } else{
+      return true;
+    }
+  }
+  
   /**
    * This method is called from within the constructor to initialize the form.
    * WARNING: Do NOT modify this code. The content of this method is always
@@ -38,7 +46,7 @@ public class RegistrarPeriodo extends javax.swing.JFrame {
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
     jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    jLabel1.setText("Registrar Periodo");
+    jLabel1.setText("REGISTRAR");
 
     jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
     jLabel2.setText("Semestre");
@@ -51,7 +59,7 @@ public class RegistrarPeriodo extends javax.swing.JFrame {
     semestre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
     regis.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    regis.setText("Registrar");
+    regis.setText("Registrar Periodo");
 
     exit.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
     exit.setText("Cancelar");
@@ -61,33 +69,34 @@ public class RegistrarPeriodo extends javax.swing.JFrame {
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-        .addContainerGap(135, Short.MAX_VALUE)
+        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         .addComponent(jLabel1)
-        .addGap(125, 125, 125))
+        .addGap(223, 223, 223))
       .addGroup(layout.createSequentialGroup()
-        .addGap(41, 41, 41)
-        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-          .addComponent(jLabel2)
-          .addComponent(jLabel3)
-          .addComponent(regis))
+        .addGap(70, 70, 70)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
           .addGroup(layout.createSequentialGroup()
-            .addGap(32, 32, 32)
+            .addComponent(jLabel3)
+            .addGap(0, 0, Short.MAX_VALUE))
+          .addGroup(layout.createSequentialGroup()
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-              .addComponent(semestre, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-              .addComponent(Anio, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGap(63, 63, 63))
-          .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(exit)))
-        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+              .addComponent(exit)
+              .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel2)
+                .addGap(37, 37, 37)))
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+              .addComponent(Anio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+              .addComponent(regis, javax.swing.GroupLayout.Alignment.TRAILING)
+              .addComponent(semestre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(55, 55, 55))))
     );
     layout.setVerticalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(layout.createSequentialGroup()
-        .addGap(25, 25, 25)
+        .addGap(27, 27, 27)
         .addComponent(jLabel1)
-        .addGap(46, 46, 46)
+        .addGap(44, 44, 44)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(jLabel2)
           .addComponent(semestre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -95,11 +104,13 @@ public class RegistrarPeriodo extends javax.swing.JFrame {
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(jLabel3)
           .addComponent(Anio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        .addGap(49, 49, 49)
+        .addContainerGap(147, Short.MAX_VALUE))
+      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-          .addComponent(regis)
-          .addComponent(exit))
-        .addContainerGap(67, Short.MAX_VALUE))
+          .addComponent(exit)
+          .addComponent(regis))
+        .addGap(57, 57, 57))
     );
 
     pack();

@@ -153,11 +153,10 @@ public class RegistrarProfesor extends javax.swing.JFrame {
     // TODO add your handling code here:
   }//GEN-LAST:event_tiposActionPerformed
 
-public boolean logInDatosCorrectos(){  
+  public boolean logInDatosCorrectos(){  
     if (contr.getText().length() == 0 || nombre.getText().length() == 0){
       return false;
-    }
-    else{
+    } else{
       return true;
     }
   }
