@@ -1,5 +1,6 @@
 package cliente;
 
+import dto.DTO_Solicitud;
 import java.util.ArrayList;
 import java.net.Socket;
 import java.io.IOException;
@@ -33,7 +34,7 @@ public class Cliente{
    * @param solicitud
    * @return objeto
    */
-  public Object enviarInformacion(Object solicitud){
+  public Object enviarInformacion(DTO_Solicitud solicitud){
     try{
       cs = new Socket(HOST, PUERTO);
       salidaCliente= new ObjectOutputStream(cs.getOutputStream());
