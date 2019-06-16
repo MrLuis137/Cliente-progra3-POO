@@ -13,7 +13,7 @@ package dto;
 public class DTO_Empresa extends DTO_Object{
   private String nombre;
   private String direccion;
-  private int telefono;
+  private String telefono;
   private String sup;
 
   public String getNombre() {
@@ -32,11 +32,11 @@ public class DTO_Empresa extends DTO_Object{
     this.direccion = direccion;
   }
 
-  public int getTelefono() {
+  public String getTelefono() {
     return telefono;
   }
 
-  public void setTelefono(int telefono) {
+  public void setTelefono(String telefono) {
     this.telefono = telefono;
   }
 
