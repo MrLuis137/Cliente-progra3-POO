@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -17,6 +17,7 @@ import vista.RegistrarProfesor;
 import vista.RegistrarEmpresa;
 import vista.RegistrarPeriodo;
 import vista.RegistrarPracticante;
+import vista.RegistrarCalendario;
 
 /**
  *
@@ -30,6 +31,7 @@ public class ControladorEncargado extends JFrame implements ActionListener {
   public RegistrarPracticante regPrac = new RegistrarPracticante();
   public DTO_Profesor dtoProfesor= new DTO_Profesor();
   public Cliente logica= new Cliente();
+  public RegistrarCalendario calenR = new RegistrarCalendario();
   public ControladorEncargado() {
     menu.jButton1.addActionListener(this);
     menu.jButton2.addActionListener(this);
