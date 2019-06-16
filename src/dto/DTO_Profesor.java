@@ -5,11 +5,13 @@
  */
 package dto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Luis AZ
  */
-public class DTO_Profesor extends DTO_Object{
+public class DTO_Profesor extends DTO_Object implements Serializable{
 
   private String nombre;
   private String telefono;

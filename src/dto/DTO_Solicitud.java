@@ -5,11 +5,13 @@
  */
 package dto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Luis AZ
  */
-public class DTO_Solicitud extends DTO_Object{
+public class DTO_Solicitud extends DTO_Object implements Serializable{
   DTO_Object objeto;
   String instruccion;
 

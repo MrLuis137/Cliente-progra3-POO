@@ -5,7 +5,9 @@
  */
 package controlador;
 import cliente.Cliente;
+import dto.DTO_Object;
 import dto.DTO_Profesor;
+import dto.DTO_Solicitud;
 import javax.swing.*;
 import java.awt.event.*; 
 import java.util.ArrayList;
@@ -80,7 +82,10 @@ public class ControladorEncargado extends JFrame implements ActionListener {
       profe.setTelefono(telef);
       profe.setCorreo(correo);
       profe.setContra(contrasena);
-      logica.enviarInformacion(profe);
+      DTO_Solicitud soli= new DTO_Solicitud();
+      soli.setInstruccion("regProf");
+      soli.setObjeto((DTO_Object) profe);
+      logica.enviarInformacion(soli);
       //modelo = new Usuario(nombreUsuario, contraseña);
       boolean usuarioActual = true;
       if (usuarioActual != false) { 

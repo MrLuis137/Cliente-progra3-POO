@@ -5,10 +5,12 @@
  */
 package dto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Luis AZ
  */
-public class DTO_Object {
+public class DTO_Object implements Serializable {
   
 }
