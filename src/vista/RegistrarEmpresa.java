@@ -31,9 +31,9 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
     jLabel3 = new javax.swing.JLabel();
     jLabel4 = new javax.swing.JLabel();
     jLabel5 = new javax.swing.JLabel();
-    direc = new javax.swing.JTextField();
-    tel = new javax.swing.JTextField();
-    name2 = new javax.swing.JTextField();
+    telEmp = new javax.swing.JTextField();
+    dir = new javax.swing.JTextField();
+    nameEmp = new javax.swing.JTextField();
     telSuper = new javax.swing.JTextField();
     jLabel6 = new javax.swing.JLabel();
     jLabel7 = new javax.swing.JLabel();
@@ -48,7 +48,7 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
     jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    jLabel1.setText("Registrar Empresa");
+    jLabel1.setText("REGISTRAR");
 
     jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
     jLabel2.setText("Tel");
@@ -62,24 +62,24 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
     jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
     jLabel5.setText("Tel");
 
-    direc.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    direc.addActionListener(new java.awt.event.ActionListener() {
+    telEmp.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+    telEmp.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
-        direcActionPerformed(evt);
+        telEmpActionPerformed(evt);
       }
     });
 
-    tel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    tel.addActionListener(new java.awt.event.ActionListener() {
+    dir.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+    dir.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
-        telActionPerformed(evt);
+        dirActionPerformed(evt);
       }
     });
 
-    name2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    name2.addActionListener(new java.awt.event.ActionListener() {
+    nameEmp.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+    nameEmp.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
-        name2ActionPerformed(evt);
+        nameEmpActionPerformed(evt);
       }
     });
 
@@ -124,7 +124,7 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
     });
 
     regist.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-    regist.setText("Registrar");
+    regist.setText("Registrar Empresa");
 
     exit.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
     exit.setText("Cancelar");
@@ -133,10 +133,6 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGroup(layout.createSequentialGroup()
-        .addGap(298, 298, 298)
-        .addComponent(jLabel1)
-        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
       .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
           .addGroup(layout.createSequentialGroup()
@@ -159,8 +155,8 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
                       .addComponent(jLabel9))
                     .addGap(18, 18, 18)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                      .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                      .addComponent(name2, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                      .addComponent(dir, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                      .addComponent(nameEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
                       .addComponent(nameSup, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
                       .addComponent(correoSup, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)))
                   .addGroup(layout.createSequentialGroup()
@@ -173,28 +169,32 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
               .addComponent(jLabel5))
             .addGap(18, 18, 18)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-              .addComponent(direc, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+              .addComponent(telEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
               .addComponent(puestSuper, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
               .addComponent(telSuper, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))))
         .addGap(43, 43, 43))
+      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+        .addGap(0, 0, Short.MAX_VALUE)
+        .addComponent(jLabel1)
+        .addGap(338, 338, 338))
     );
     layout.setVerticalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(layout.createSequentialGroup()
-        .addGap(24, 24, 24)
+        .addGap(29, 29, 29)
         .addComponent(jLabel1)
-        .addGap(44, 44, 44)
+        .addGap(39, 39, 39)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
           .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
             .addComponent(jLabel2)
-            .addComponent(direc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(telEmp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
           .addGroup(layout.createSequentialGroup()
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
               .addComponent(jLabel4)
-              .addComponent(name2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+              .addComponent(nameEmp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGap(20, 20, 20)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-              .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+              .addComponent(dir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
               .addComponent(jLabel3))
             .addGap(53, 53, 53)
             .addComponent(jLabel6)
@@ -221,17 +221,17 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
     pack();
   }// </editor-fold>//GEN-END:initComponents
 
-  private void direcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_direcActionPerformed
+  private void telEmpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telEmpActionPerformed
     // TODO add your handling code here:
-  }//GEN-LAST:event_direcActionPerformed
+  }//GEN-LAST:event_telEmpActionPerformed
 
-  private void telActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telActionPerformed
+  private void dirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dirActionPerformed
     // TODO add your handling code here:
-  }//GEN-LAST:event_telActionPerformed
+  }//GEN-LAST:event_dirActionPerformed
 
-  private void name2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name2ActionPerformed
+  private void nameEmpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameEmpActionPerformed
     // TODO add your handling code here:
-  }//GEN-LAST:event_name2ActionPerformed
+  }//GEN-LAST:event_nameEmpActionPerformed
 
   private void telSuperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telSuperActionPerformed
     // TODO add your handling code here:
@@ -249,10 +249,18 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
     // TODO add your handling code here:
   }//GEN-LAST:event_correoSupActionPerformed
 
-
+  public boolean logInDatosCorrectos(){  
+    if (correoSup.getText().length() == 0 || telEmp.getText().length() == 0){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
+    
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.JTextField correoSup;
-  private javax.swing.JTextField direc;
+  public javax.swing.JTextField correoSup;
+  public javax.swing.JTextField dir;
   public javax.swing.JButton exit;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
@@ -263,12 +271,12 @@ public class RegistrarEmpresa extends javax.swing.JFrame {
   private javax.swing.JLabel jLabel7;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
-  private javax.swing.JTextField name2;
-  private javax.swing.JTextField nameSup;
-  private javax.swing.JTextField puestSuper;
+  public javax.swing.JTextField nameEmp;
+  public javax.swing.JTextField nameSup;
+  public javax.swing.JTextField puestSuper;
   public javax.swing.JButton regist;
-  private javax.swing.JTextField tel;
-  private javax.swing.JTextField telSuper;
+  public javax.swing.JTextField telEmp;
+  public javax.swing.JTextField telSuper;
   // End of variables declaration//GEN-END:variables
 
 }

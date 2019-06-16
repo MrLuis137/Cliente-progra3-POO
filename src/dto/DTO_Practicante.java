@@ -23,6 +23,16 @@ public class DTO_Practicante extends DTO_Object{
   private String empresa;
   private String profeAsesor;
   private String periodo; 
+  private String contr; 
+
+  public String getContr() {
+    return contr;
+  }
+
+  public void setContr(String contr) {
+    this.contr = contr;
+  }
+  
   public String getPeriodo() {
     return periodo;
   }

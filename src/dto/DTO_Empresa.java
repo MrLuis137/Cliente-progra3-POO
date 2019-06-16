@@ -15,7 +15,34 @@ public class DTO_Empresa extends DTO_Object{
   private String direccion;
   private String telefono;
   private String sup;
+  private String correo;
+  private String telefonoS;
+  private String puesto;
 
+  public String getCorreo() {
+    return correo;
+  }
+
+  public void setCorreo(String correo) {
+    this.correo = correo;
+  }
+
+  public String getTelefonoS() {
+    return telefonoS;
+  }
+
+  public void setTelefonoS(String telefonoS) {
+    this.telefonoS = telefonoS;
+  }
+
+  public String getPuesto() {
+    return puesto;
+  }
+
+  public void setPuesto(String puesto) {
+    this.puesto = puesto;
+  }
+  
   public String getNombre() {
     return nombre;
   }
