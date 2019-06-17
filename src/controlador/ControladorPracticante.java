@@ -5,22 +5,25 @@
  */
 package controlador; 
 import javax.swing.*;
-import java.awt.event.*; 
-import java.util.ArrayList; 
+import java.awt.event.*;   
 import vista.CrearMinuta;
 import vista.MenuPracticante;
 import vista.NotasyCalendario;
 import vista.RegistrarEntregable;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
-public class ControladorPracticante  extends JFrame implements ActionListener{ 
-  public MenuPracticante menu= new MenuPracticante();
-  public RegistrarEntregable entregable= new RegistrarEntregable();
-  public NotasyCalendario notas= new NotasyCalendario();
-  public CrearMinuta minuta= new CrearMinuta();
+public class ControladorPracticante  extends JFrame implements ActionListener{  
+  public MenuPracticante menu= new MenuPracticante(); 
+  public RegistrarEntregable entregable= new RegistrarEntregable(); 
+  public NotasyCalendario notas= new NotasyCalendario(); 
+  public CrearMinuta minuta= new CrearMinuta(); 
+  /**
+   * Constructor
+   */
   public ControladorPracticante(){ 
     menu.regEntr.addActionListener(this);
     menu.crearMinu.addActionListener(this);
@@ -35,6 +38,10 @@ public class ControladorPracticante  extends JFrame implements ActionListener{
     minuta.minuta.addActionListener(this); 
   }
 
+  /**
+   * Encargado de gestionar las acciones de los botones
+   * @param e
+   */
   @Override
   public void actionPerformed(ActionEvent e) {
     switch(e.getActionCommand()) {

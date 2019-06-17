@@ -5,14 +5,15 @@
  */
 package vista;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class NotasyCalendario extends javax.swing.JFrame {
 
   /**
-   * Creates new form NotasyCalendario
+   * Constructor
    */
   public NotasyCalendario() {
     initComponents();

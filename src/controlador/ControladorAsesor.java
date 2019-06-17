@@ -6,7 +6,6 @@
 package controlador;
 import javax.swing.*;
 import java.awt.event.*; 
-import java.util.ArrayList; 
 import vista.MenuProfesorAsesor;
 import vista.CalendarioPA;
 import vista.AsignarNota;
@@ -14,18 +13,22 @@ import vista.SolicitarReunion;
 import vista.ConsultarEntregable;
 import vista.ConsultarMinutas;
 
-/**
- *
- * @author Valeria
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
-public class ControladorAsesor extends JFrame implements ActionListener{
-  public MenuProfesorAsesor menu = new MenuProfesorAsesor();
-  public CalendarioPA calendario = new CalendarioPA();
-  public AsignarNota nota = new AsignarNota();
-  public ConsultarEntregable consultaEntre = new ConsultarEntregable();
-  public SolicitarReunion soliReunion = new SolicitarReunion();
+public class ControladorAsesor extends JFrame implements ActionListener{ 
+  public MenuProfesorAsesor menu = new MenuProfesorAsesor(); 
+  public CalendarioPA calendario = new CalendarioPA(); 
+  public AsignarNota nota = new AsignarNota(); 
+  public ConsultarEntregable consultaEntre = new ConsultarEntregable(); 
+  public SolicitarReunion soliReunion = new SolicitarReunion(); 
   public ConsultarMinutas consultMin = new ConsultarMinutas();
   
+  /**
+   * Constructor
+   */
   public ControladorAsesor(){
     menu.AsignarNota.addActionListener(this);
     menu.ConsultaEntreg.addActionListener(this);
@@ -39,10 +42,14 @@ public class ControladorAsesor extends JFrame implements ActionListener{
     consultaEntre.salir.addActionListener(this);
     consultaEntre.selec.addActionListener(this);
     soliReunion.exit.addActionListener(this);
-    soliReunion.soliReu.addActionListener(this);
-    //faltan los de minutas
+    soliReunion.soliReu.addActionListener(this); 
   }
   
+  /**
+   * Encargado de gestionar las acciones de los botones
+   * 
+   * @param e
+   */
   @Override
   public void actionPerformed(ActionEvent e) {
     switch(e.getActionCommand()) {   

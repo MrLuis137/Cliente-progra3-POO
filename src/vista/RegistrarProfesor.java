@@ -5,9 +5,10 @@
  */
 package vista;
 
-/**
- *
- * @author Valeria
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class RegistrarProfesor extends javax.swing.JFrame {
 

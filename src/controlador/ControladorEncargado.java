@@ -22,19 +22,24 @@ import vista.RegistrarPeriodo;
 import vista.RegistrarPracticante;
 import vista.RegistrarCalendario;
 
-/**
- *
- * @author Valeria
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
-public class ControladorEncargado extends JFrame implements ActionListener {
-  public MenuEncargadoPractica menu = new MenuEncargadoPractica();
-  public RegistrarProfesor regisProfe = new RegistrarProfesor();
-  public RegistrarEmpresa regisEm = new RegistrarEmpresa();
-  public RegistrarPeriodo periodo = new RegistrarPeriodo();
-  public RegistrarPracticante regPrac = new RegistrarPracticante();
-  public DTO_Profesor dtoProfesor= new DTO_Profesor();
-  public Cliente logica= new Cliente();
+public class ControladorEncargado extends JFrame implements ActionListener { 
+  public MenuEncargadoPractica menu = new MenuEncargadoPractica(); 
+  public RegistrarProfesor regisProfe = new RegistrarProfesor(); 
+  public RegistrarEmpresa regisEm = new RegistrarEmpresa(); 
+  public RegistrarPeriodo periodo = new RegistrarPeriodo(); 
+  public RegistrarPracticante regPrac = new RegistrarPracticante(); 
+  public DTO_Profesor dtoProfesor= new DTO_Profesor(); 
+  public Cliente logica= new Cliente(); 
   public RegistrarCalendario calenR = new RegistrarCalendario();
+
+  /**
+   * Constructor
+   */
   public ControladorEncargado() {
     menu.jButton1.addActionListener(this);
     menu.jButton2.addActionListener(this);
@@ -52,6 +57,10 @@ public class ControladorEncargado extends JFrame implements ActionListener {
     regPrac.reg.addActionListener(this);
   }
   
+  /**
+   * Encargado de escuchar las acciones de los botones
+   * @param e
+   */
   public void actionPerformed(ActionEvent e) {
     switch(e.getActionCommand()) {
       case "Registrar profesor":
@@ -84,6 +93,9 @@ public class ControladorEncargado extends JFrame implements ActionListener {
     }
   }
   
+  /**
+   * Encargado de registrar un profesor
+   */
   public void registrarProfe() { 
     if (regisProfe.logInDatosCorrectos() == true) {
       String nombreUsuario = regisProfe.nombre.getText();
@@ -115,6 +127,9 @@ public class ControladorEncargado extends JFrame implements ActionListener {
     }
   }
   
+  /**
+   * Encargado de registrar un periodo de práctica
+   */
   public void registrarPP() { 
     if (periodo.logInDatosCorrectos() == true) {
       String semestre = periodo.semestre.getText();
@@ -125,8 +140,7 @@ public class ControladorEncargado extends JFrame implements ActionListener {
       DTO_Solicitud soli= new DTO_Solicitud();
       soli.setInstruccion("regPP");
       soli.setObjeto((DTO_Object) pp);
-      logica.enviarInformacion(soli);
-      //modelo = new Usuario(nombreUsuario, contraseña);
+      logica.enviarInformacion(soli); 
       boolean usuarioActual = true;
       if (usuarioActual != false) { 
         JOptionPane.showMessageDialog(periodo, "El periodo ha sido registrado con exito");
@@ -140,6 +154,9 @@ public class ControladorEncargado extends JFrame implements ActionListener {
     } 
   }
   
+  /**
+   * Encargado de registrar una empresa
+   */
   public void registrarEmpresa() { 
     if (regisEm.logInDatosCorrectos() == true) {
       String nombreEmp = regisEm.nameEmp.getText();
@@ -175,6 +192,9 @@ public class ControladorEncargado extends JFrame implements ActionListener {
     } 
   }
   
+  /**
+   * Encargado de registrar un practicante
+   */
   public void registrarPract() { 
     if (regPrac.logInDatosCorrectos() == true) {
       String nombreUsuario = regPrac.Nombre.getText();

@@ -8,11 +8,17 @@ package aplicacion;
 import controlador.ControladorTotal;
 import vista.ingreso;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class AplCliente {
+
+  /**
+   * Main del cliente
+   * @param args
+   */
   public static void main(String[] args) {
     ingreso vista = new ingreso();  
     ControladorTotal controladorUsuario = new ControladorTotal(vista);

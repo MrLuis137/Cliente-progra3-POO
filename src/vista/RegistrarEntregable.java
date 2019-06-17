@@ -10,14 +10,15 @@ import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class RegistrarEntregable extends javax.swing.JFrame {
 
   /**
-   * Creates new form RegistrarEntregable
+   * Constructor
    */
   public RegistrarEntregable() {
     initComponents();

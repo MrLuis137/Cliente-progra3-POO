@@ -7,9 +7,10 @@ package vista;
 
 import javax.swing.JFileChooser;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class ingreso extends javax.swing.JFrame {
   private JFileChooser jfcOperaciones;

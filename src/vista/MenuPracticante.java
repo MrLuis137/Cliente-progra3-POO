@@ -5,14 +5,15 @@
  */
 package vista;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class MenuPracticante extends javax.swing.JFrame {
 
   /**
-   * Creates new form MenuPracticante
+   * Constructor
    */
   public MenuPracticante() {
     initComponents();

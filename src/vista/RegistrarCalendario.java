@@ -5,14 +5,15 @@
  */
 package vista;
 
-/**
- *
- * @author Valeria
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class RegistrarCalendario extends javax.swing.JFrame {
 
   /**
-   * Creates new form RegistrarCalendario
+   * Constructor
    */
   public RegistrarCalendario() {
     initComponents();

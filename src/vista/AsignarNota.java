@@ -5,9 +5,10 @@
  */
 package vista;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class AsignarNota extends javax.swing.JFrame {
 

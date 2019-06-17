@@ -7,24 +7,22 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-/**
- * Clase que realiza la conexión con el servidor.
- * @autor Luis Diego Aleman
- * @autor Valeria Quesada
- * @autor Marlen Solano
- * @version 16/5/2019
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class Cliente{
   
   private static final int PUERTO = 64923; //Puerto para la conexion
-  private static final String HOST = "localhost"; //Host para la conexion
-  protected static String mensajeServidor;
-  protected static Socket cs; //Socket del servidor;
+  private static final String HOST = "localhost"; //Host para la conexion 
+  protected static String mensajeServidor; 
+  protected static Socket cs; //Socket del servidor; 
   protected static ObjectOutputStream salidaCliente; //Flujo de datos de salida
     
   
   /**
-   * constructor del cliente del juego
+   * Constructor del cliente
    */ 
   public Cliente(){
   }

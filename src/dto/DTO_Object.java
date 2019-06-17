@@ -7,9 +7,10 @@ package dto;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Luis AZ
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
 public class DTO_Object implements Serializable {
   

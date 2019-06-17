@@ -13,18 +13,28 @@ import javax.swing.JOptionPane;
 import vista.MenuPracticante;
 import vista.MenuProfesorAsesor;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
-public class ControladorTotal extends JFrame implements ActionListener{
-  public ingreso ingreso; 
-  public MenuPracticante prac; 
+public class ControladorTotal extends JFrame implements ActionListener{ 
+  public ingreso ingreso;  
+  public MenuPracticante prac;  
+  /**
+   * Constructor
+   * @param pVista
+   */
   public ControladorTotal(ingreso pVista){
     ingreso = pVista; 
     ingreso.ingresar.addActionListener(this);
     ingreso.salir.addActionListener(this); 
   }
+
+  /**
+   * Encargado de gestionar las acciones de los botones
+   * @param e
+   */
   @Override
   public void actionPerformed(ActionEvent e) { 
     switch(e.getActionCommand()) {
@@ -39,46 +49,50 @@ public class ControladorTotal extends JFrame implements ActionListener{
     }
   }
   
+  /**
+   * Encargado del login
+   */
   public void logIn() {
     if (ingreso.logInDatosCorrectos() == true) {
       String nombreUsuario = ingreso.ingresar.getText();
       String contraseña = ingreso.contrasenia.getText();
-      String opcion = ingreso.tipos.getSelectedItem().toString();
-      //modelo = new Usuario(nombreUsuario, contraseña);
-      //Usuario usuarioActual = vv.iniciarSesion(modelo);
+      String opcion = ingreso.tipos.getSelectedItem().toString(); 
       if ("Practicante".equals(opcion)) {
         ingreso.setVisible(false); 
-        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 
+        JOptionPane.showMessageDialog(ingreso, "Bienvenido: " + nombreUsuario); 
         ControladorPracticante controladorPracticante = new ControladorPracticante();
         controladorPracticante.menu.setVisible(true);
         controladorPracticante.menu.setLocationRelativeTo(null); 
       } else if ("Profesor asesor".equals(opcion)) {
         ingreso.setVisible(false); 
-        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 
+        JOptionPane.showMessageDialog(ingreso, "Bienvenido: " + nombreUsuario); 
         ControladorAsesor controladorAsesor = new ControladorAsesor();
         controladorAsesor.menu.setVisible(true);
         controladorAsesor.menu.setLocationRelativeTo(null); 
       } else if ("Encargado de práctica".equals(opcion)) {
         ingreso.setVisible(false); 
-        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 
+        JOptionPane.showMessageDialog(ingreso, "Bienvenido: " + nombreUsuario);  
         ControladorEncargado controladorEncargado = new ControladorEncargado();
         controladorEncargado.menu.setVisible(true);
         controladorEncargado.menu.setLocationRelativeTo(null); 
       } else if ("Profesor de curso de prácitca".equals(opcion)) {
         ingreso.setVisible(false); 
-        //JOptionPane.showMessageDialog(vista, "Bienvenido: " +modelo.getNombre()); 
+        JOptionPane.showMessageDialog(ingreso, "Bienvenido: " + nombreUsuario); 
         ControladorProfesorCP controladorProfesorCP = new ControladorProfesorCP();
         controladorProfesorCP.menu.setVisible(true);
         controladorProfesorCP.menu.setLocationRelativeTo(null); 
       } 
       else {
-        //JOptionPane.showMessageDialog(vista, "El usuario indicado no existe");
+        JOptionPane.showMessageDialog(ingreso, "El usuario indicado no existe");
       }
     } else {
-     // JOptionPane.showMessageDialog(vista, "Todos los datos son requeridos");
+      JOptionPane.showMessageDialog(ingreso, "Todos los datos son requeridos");
     }
   }
   
+  /**
+   * Cierra las ventanas
+   */
   public void cerrarVentanaLogin() {
     ingreso.cancelarInicioSesion();
   }

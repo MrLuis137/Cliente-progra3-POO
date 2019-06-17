@@ -12,14 +12,18 @@ import vista.ConsultarDatos;
 import vista.ConsultarNotasFinales;
 import vista.MenuProfesorCursoPractica;
 
-/**
- *
- * @author 1001001238
+/** 
+ * @author Luis Diego Aleman
+ * @author Valeria Quesada
+ * @author Marlen Solano 
  */
-public class ControladorProfesorCP extends JFrame implements ActionListener{
-  public MenuProfesorCursoPractica menu= new MenuProfesorCursoPractica();
-  public ConsultarDatos datos= new ConsultarDatos();
-  public ConsultarNotasFinales notas= new ConsultarNotasFinales(); 
+public class ControladorProfesorCP extends JFrame implements ActionListener{ 
+  public MenuProfesorCursoPractica menu= new MenuProfesorCursoPractica(); 
+  public ConsultarDatos datos= new ConsultarDatos(); 
+  public ConsultarNotasFinales notas= new ConsultarNotasFinales();  
+  /**
+   * Constructor
+   */
   public ControladorProfesorCP(){ 
     menu.salir.addActionListener(this);
     menu.consultarNF.addActionListener(this);
@@ -30,6 +34,10 @@ public class ControladorProfesorCP extends JFrame implements ActionListener{
     notas.salir.addActionListener(this);  
   }
 
+  /**
+   * Encargado de gestionar las acciones de los botones
+   * @param e
+   */
   @Override
   public void actionPerformed(ActionEvent e) {
     switch(e.getActionCommand()) {
